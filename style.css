@@ -115,6 +115,7 @@ header ul li {
     background: var(--gradiante);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .job {
