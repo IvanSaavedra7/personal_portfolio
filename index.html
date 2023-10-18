@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ivan Saavedra | Portifolio Pessoal</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
 
 <body>
+
+
+    <!-- -----------------------------MENU FIXO------------------------------ -->
 
     <header>
         <div class="logoContaider">
@@ -21,7 +22,7 @@
             <li><a href="#sobreMim">Sobre mim</a></li>
             <li><a href="#formacao">Formação</a> </li>
             <li><a href="#portifolio">Portifolio</a></li>
-            <li><a href="#contatos">Contato</a></li>
+            <li><a href="#contato">Contato</a></li>
         </ul>
 
     </header>
@@ -34,9 +35,9 @@
                 <p>Bem vindo ao meu perfil</p>
 
                 <h1>
-                    Olá, eu sou o Ivan <br />
-                    um <div class="gradientText">
-                        <div class="job" data-job1="{Desenvolvedor.}" data-job2="{BackEnd.}"></div>
+                    Olá, eu sou o Ivan 
+                    um <br /> <div class="gradientText">
+                        <div class="job">Desenvolvedor BackEnd</div>
                     </div>
                 </h1>
 
@@ -44,12 +45,25 @@
                     na UNINTER
                 </p>
 
-                <div class="find">
+                <div class="socialMideas">
                     <h3>Redes sociais</h3>
                     <ul>
-                        <li> <img src="./imagens/GitHub.png"> </li>
-                        <li> <img src="./imagens/LinkedIn.png"> </i> </li>
-                        <li> <img src="./imagens/Twitter.png"> </i> </li>
+                        <a class="btn btn-success" href="https://github.com/IvanSaavedra7" target="_blank">
+                            <li> 
+                                <img src="./imagens/GitHub.png"> 
+                            </li>
+                        </a>
+
+                        <a class="btn btn-success" href="https://www.linkedin.com/in/ivan-saavedra-55a1b81a3/" target="_blank">
+                            <li> <img src="./imagens/LinkedIn.png"> </i> </li>
+                        </a>
+
+                        <a class="btn btn-success" href="https://twitter.com/ivanito_bolito" target="_blank">
+                            <li> <img src="./imagens/Twitter.png"> </i> </li>
+                        </a>
+                        
+                        
+                        
                     </ul>
                 </div>
             </div>
@@ -59,6 +73,9 @@
             </div>
         </div>
     </div>
+
+    <!-- -----------------------------SOBRE MIM------------------------------ -->
+
 
     <section class="sobreMim" id="sobreMim">
 
@@ -82,6 +99,8 @@
         </div>
 
     </section>
+
+    <!-- -----------------------------FORMACAO------------------------------ -->
 
 
     <section class="formacao" id="formacao">
@@ -109,41 +128,44 @@
         </div>
     </section>
 
-    <section class="portifolio" id="#portifolio">
+    <!-- -----------------------------PORTIFOLIO------------------------------ -->
+
+
+    <section class="portifolio" id="portifolio">
         <h1 class="tituloPortifolio">Meus
             <div class="efeitoTextoPostofolio"> Projetos</div>
         </h1>
 
-        <div class="projetosContainer1">
-            <div class="projetosContainer2">
+        <div class="containerPortifolio1">
+            <div class="containerPortifolio2">
 
-                <div class="projetosContainerGeral">
-                    <div class="projetosImagem">
-                        <img src="./imagens/prolog.png" alt="projeto 1" class="projetoImg">
+                <div class="containerPortifolio3">
+                    <div class="containerPortifolio4">
+                        <img src="./imagens/prolog.png" alt="projeto 1 -" class="projeto-img">
                     </div>
-                    <h2 class="projetoTitulo">Projeto 1</h2>
-                    <div class="btnPortifolio">
-                        <button class="btn" onclick="location.href='https://github.com/IvanSaavedra7/Oracle'">GitHub</button>
+                    <h2 class="projetoSubTitutlo">Projeto 1 - Oracle</h2>
+                    <div class="btn-container">
+                        <button class="btnProjeto" onclick="window.open('https://github.com/IvanSaavedra7/Oracle', '_blank')">GitHub</button>
                     </div>
                 </div>
 
-                <div class="projetosContainerGeral">
-                    <div class="projetosImagem">
-                        <img src="./imagens/crud.png" alt="projeto 1" class="projetoImg">
+                <div class="containerPortifolio3">
+                    <div class="containerPortifolio4">
+                        <img src="./imagens/crud.png" alt="projeto 1" class="projeto-img">
                     </div>
-                    <h2 class="projetoTitulo">Projeto 2</h2>
-                    <div class="btnPortifolio">
-                        <button class="btn" onclick="location.href='https://github.com/IvanSaavedra7/School-CRUD-AND-Search-Cep'">GitHub</button>
+                    <h2 class="projetoSubTitutlo">Projeto 2 - CRUD</h2>
+                    <div class="btn-container">
+                        <button class="btnProjeto" onclick="window.open('https://github.com/IvanSaavedra7/School-CRUD-AND-Search-Cep', '_blank')" >GitHub</button>
                     </div>
                 </div>
 
-                <div class="projetosContainerGeral">
-                    <div class="projetosImagem">
-                        <img src="./imagens/flutter.png" alt="projeto 1" class="projetoImg">
+                <div class="containerPortifolio3">
+                    <div class="containerPortifolio4">
+                        <img src="./imagens/flutter.png" alt="projeto 1" class="projeto-img">
                     </div>
-                    <h2 class="projetoTitulo">Projeto 2</h2>
-                    <div class="btnPortifolio">
-                        <button class="btn" onclick="location.href='https://github.com/IvanSaavedra7/Exchanging-Flutter-Images'">GitHub</button>
+                    <h2 class="projetoSubTitutlo">Projeto 3  - App Mobile</h2>
+                    <div class="btn-container">
+                        <button class="btnProjeto" onclick="window.open('https://github.com/IvanSaavedra7/Exchanging-Flutter-Images', '_blank')" >GitHub</button>
                     </div>
                 </div>
 
@@ -152,6 +174,34 @@
         </div>
 
     </section>
+
+    <!-- -----------------------------CONTATOS------------------------------ -->
+
+
+    <section class="containerFormulario" id="contato">
+        <div class="containerFormulario1">
+          <h1 class="containerFormularioTitulo">Entre em contato comigo</h1>
+          <h3 class="containerFormularioSubTitulo">Perguntas, propostas ou caso queira trocar uma Ideia :)</h3>
+
+          <div class="formulario">
+            <form action="">
+              <div class="containerCamposformulario">
+                 <input class="formularioCampos" type="text" name="name" id="" placeholder="Nome">
+                 <input class="formularioCampos" type="email" name="name" id="" placeholder="E-mail">
+                 <input class="formularioCampos" type="text" name="subject" id="" placeholder="Assunto">
+                 <textarea name="message" id="" cols="30" rows="10" class="formularioCampos formularioAreaTexto" placeholder="Mensagem..."></textarea>
+              </div>
+
+              <div>
+                <button type="submit" class="formularioBtn" id="formularioBtn">Enviar   
+              </button>
+              </div>
+            </form>
+
+          </div>
+        </div>
+
+      </section>
 
 </body>
 

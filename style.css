@@ -30,7 +30,8 @@ body {
     font-size: 20px;
 }
 
-/*-----------------------------------------------------------*/
+/*------------------------------ESTILIZAÇÃO CABEÇARIO-----------------------------*/
+
 header .navDiv,
 header .nav label,
 header input {
@@ -93,7 +94,7 @@ header ul li {
     margin: auto;
 }
 
-/*-----------------------------------------------------------*/
+/*-----------------------------ESTILIZAÇÃO PARTE INICIAL------------------------------*/
 
 .banner {
     margin-top: 150px;
@@ -109,7 +110,7 @@ header ul li {
 }
 
 .banner .content h1 {
-    font-size: 4.5rem;
+    font-size: 2.5rem;
     margin: 0;
 }
 
@@ -132,39 +133,20 @@ header ul li {
     animation: effectText 1s linear(0 0%, 1.39 102.94%) infinite alternate, changeText 4s linear infinite;
 }
 
-@keyframes effectText {
-    from {
-        max-width: 0;
-    }
+/*-----------------------------ESTILIZAÇÃO REDES SOCIAIS------------------------------*/
 
-    to {
-        max-width: 500px;
-    }
-}
 
-@keyframes changeText {
-    from {
-        content: attr(data-job1);
-    }
-
-    to {
-        content: attr(data-job2);
-    }
-}
-
-/*-----------------------------------------------------------*/
-
-.find {
+.socialMideas {
     margin-top: 50px;
 }
 
-.find ul {
+.socialMideas ul {
     padding: 0;
     list-style: none;
     display: flex;
 }
 
-.find ul li {
+.socialMideas ul li {
     padding: 15px;
     box-shadow: var(--sombra);
     margin: 10px;
@@ -176,12 +158,12 @@ header ul li {
     transition: .5s;
 }
 
-.find ul li img {
+.socialMideas ul li img {
     width: 25px;
     height: 25px;
 }
 
-.find ul li:hover {
+.socialMideas ul li:hover {
     background: var(--gradiante);
 }
 
@@ -216,7 +198,8 @@ header ul li {
     }
 }
 
-/*-----------------------------------------------------------*/
+/*------------------------------ESTILIZAÇÃO SOBRE MIM-----------------------------*/
+
 
 .sobreMim {
     display: grid;
@@ -251,7 +234,8 @@ header ul li {
     font-size: 60px;
 }
 
-/*-----------------------------------------------------------*/
+/*------------------------------ESTILIZAÇÃO DA FORMAÇÃO-----------------------------*/
+
 
 
 .tituloFormacao {
@@ -297,33 +281,169 @@ header ul li {
     text-align: center;
 }
 
-/*-----------------------------------------------------------*/
+/*------------------------------ESTILIZAÇÃO DO PORTIFOLIO-----------------------------*/
 
 
-#portifolio{
+.portifolio{
     position: relative;
+    border-bottom: 5px solid rgba(182, 189, 193, 0.44);
 }
 
-.projetosContainerGeral{
-    border-color: #1e1e1e;
-    background: rgb(97, 31, 31);
+.tituloPortifolio{
+text-align: center;
+font-size: 60px;
+color: var(--cor-texto);
 }
 
-.projetoImg{
-    border-radius: 2rem;
-    width: 20%;
-    height: 20%;
-}
-
-.btnPortifolio{
+.efeitoTextoPostofolio{
     display: inline-block;
-    padding: 5px;
-    background: #1e1e1e;
-    border-radius: 40px;
-    font-size: 14px;
+    background: var(--gradiante);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-left: 8px;
+    font-size: 60px;
+}
+
+.containerPortifolio1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.containerPortifolio2{
+    gap: 2rem;
+    margin: 0 3rem 3rem 3rem;
+    display: flex;
+}
+
+.containerPortifolio3{
+    padding: 1.5rem;
+    flex:1;
+    background: white;
+    border-radius: 2rem;
+    border-color: black;
+    text-align: center;
+    background-color: #a90909;
+    border-color: rgb(12, 12, 12);
+    background: var(--cor-texto);
+}
+
+.containerPortifolio4{
+    display:flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+
+.projeto-img{
+    border-radius: 2rem;
+    width: 90%;
+    height:90%;
+}
+
+.projetoSubTitutlo{
+    margin-bottom: 2rem;
     color: var(--branco);
+}
+
+.btnProjeto{
+    display: inline-block;
+    padding: 5px 18px;
+    background: var(--gradiante);
+    border-radius: 40px;
+    font-size: 30px;
+    color: var(--cor-texto);
     letter-spacing: 2px;
     text-decoration: none;
     font-weight: 600;
-    box-shadow: 0 0 5px #6a6d71, 0 0 25px #6a6d71;
+    box-shadow: 0 0 5px #a90909;
 }
+
+/*------------------------------ESTILIZAÇÃO DO FORMULARIO-----------------------------*/
+
+
+
+.containerFormulario{
+    width:100%;
+    background-color: rgb(231,231,231);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.containerFormulario1{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.containerFormularioTitulo{
+    font-size: 5em;
+    color: var(--gradiante);
+    padding-top:2rem;
+    text-align: center;
+    margin: 0;
+}
+
+.containerFormularioSubTitulo{
+    font-size: 3rem;
+    color:#343d68aa;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 0;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    width: 70%;
+    margin:2rem 5rem;
+}
+.containerCamposformulario{
+    width:100%;
+}
+
+.formularioCampos{
+    width: 70%;
+    height: 42px;
+    padding: 0 2rem;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px #1f1f1f;
+    font-weight: 500;
+    border: none;
+    margin-top: 27px;
+    margin-left:20%;
+}
+
+.formularioAreaTexto{
+    height: auto;
+    padding-top: 1rem;
+}
+
+#formularioBtn{
+    display: inline-block;
+    padding: 5px 18px;
+    background: var(--gradiante);
+    border-radius: 40px;
+    font-size: 30px;
+    color: var(--cor-texto);
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 0 5px #302f2f;
+    margin: 1rem 0;
+    margin-top: 50px;
+    margin-left: 20%;
+}
+
+#formularioBtn:hover{
+    scale: 1.0;
+    background: var(--branco);
+}
+
+/*-----------------------------------------------------------*/
